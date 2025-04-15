@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">
+            <h2 class="header">DannyTech</h2><i class="italic">studio</i>
+        </div>
+        <div class="title-container">
+            <h1 class="sub-header">Budget Calculator</h1>
+            <p class="short-description">Allocate amount to your expenses (wants, needs, saving and investments).</p>
+        </div>
+        <div class="form-container">
+            <input type="number" class="input" id="income-input" placeholder="Enter income:" required>
+            <div class="btn-container">
+                <button class="button" id="submit-btn">Calculate</button>
+                <button class="button" id="reset-btn">Reset</button>
+            </div>
+        </div>
+
+        <span id="error-message"></span>
+
+        <div class="output-container">
+            <h3 class="min-header">Budget Allocations</h3>
+            <p id="needs-output" class="text"></p>
+            <p id="wants-output" class="text"></p>
+            <p id="save-invest-output" class="text"></p>
+        </div>
+        <span id="congrat-message">🤝Congrats! Happy wise spending.</span>
+    </div>
+    <script src="Interact.js"></script>
+</body>
